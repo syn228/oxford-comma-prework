@@ -6,8 +6,8 @@ def oxford_comma(array)
   elsif array.length == 3
   "#{array[0]}, #{array[1]}, and #{array[2]}"
   elsif array.length >= 4
-  array.pop
-  array.push("and dragon fruits")
+  array.push("and #{array[-1]}")
+  array.pop(-2)
   array.join(", ")
 end
   
