@@ -8,7 +8,7 @@ def oxford_comma(array)
   elsif array.length >= 4
   array.pop
   array.push("and dragon fruits")
-  array.join(" , ")
+  array.join(", ")
 end
   
 end
